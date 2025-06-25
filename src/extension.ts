@@ -154,3 +154,4 @@ function findMainInsertLine(editor: vscode.TextEditor): number {
   }
   return 0;
 }
+// hi
