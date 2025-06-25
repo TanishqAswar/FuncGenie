@@ -1,71 +1,117 @@
-# funcgenie README
+# ✨ FuncGenie – Auto-Generate C++ Function Definitions from Calls
 
-This is the README for your extension "funcgenie". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+> ⚡ Powered by Gopal Tatva  
+> 🚀 Make C++ coding magical by eliminating boilerplate!
 
 ---
 
-## Following extension guidelines
+## 🌟 Overview
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+FuncGenie is a lightweight **VS Code extension** that automatically generates C++ function definitions from function calls in real-time — so you can stay focused on logic, not syntax.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+You write this:
 
-## Working with Markdown
+```cpp
+int res = greet("RandomText", 108);
+```
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+✨ FuncGenie generates:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+```cpp
+int greet(string arg0, int arg1) {
+    // TODO: implement greet()
+}
+```
 
-## For more information
+---
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## 🛠️ Features
 
-**Enjoy!**
+- 🧠 **Smart Type Inference** – from literals and declared variables
+- 🚫 **No Duplicate Generation** – intelligently avoids repeated stubs
+- 🔁 **Automatic Updates** – renaming the function updates its definition
+- 🪄 **Inserts Above `main()`** – keeps code structure clean and clear
+- 📦 Works with macros, `signed main`, and C++ tricks
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/tanishqaswar/FuncGenie.git
+cd FuncGenie
+npm install
+```
+
+### 2. Compile the Extension
+
+```bash
+npm run compile
+```
+
+### 3. Launch Extension in Dev Mode
+
+```bash
+code .
+```
+
+Then press **F5** in VS Code to open the Extension Development Host.
+
+---
+
+## ✍️ Usage
+
+1. Open a `.cpp` file
+2. Type a function call like:
+
+   ```cpp
+   int val = sum(3, 5);
+   ```
+
+3. 🪄 *FuncGenie automatically adds:*
+
+   ```cpp
+   int sum(int arg0, int arg1) {
+       // TODO: implement sum()
+   }
+   ```
+
+   ✨ Right above your `main()` function!
+
+---
+
+## 🛤️ Roadmap
+
+Coming Soon by Krishna's Mercy:
+
+- 🧩 Support for `vector`, `pair`, `map`, and nested containers
+- 🧬 Deep Type Deduction for complex data types
+- 📝 Smarter param names (`age`, `name`, `arr`) instead of `arg0`
+- 🔄 Live Refactor Support – sync changes between call and definition
+- 🌐 Multi-language support (Golang, Python, Rust)
+
+---
+
+## 🙏 Made By
+
+FuncGenie is built by  
+**[Tanishq Aswar](https://github.com/tanishqaswar)**  
+🎓 IIIT Lucknow • C++ Automation Enthusiast
+
+---
+
+## 🪪 License
+
+Licensed under the **MIT License** – free to use, modify, and distribute.
+
+---
+
+## 💬 Feedback & Contributions
+
+🛠️ Open issues, suggest ideas, or submit PRs — let's build the coder's devotional assistant together!
+
+---
+
+🕉️ *"Chant Hare Krishna and code functionally."*
